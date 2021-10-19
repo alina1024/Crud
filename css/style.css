@@ -1,16 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
 body{
-    background-color: antiquewhite;
+    background-color: rgba(250, 235, 215, 0.747);
     font-family: 'Poiret One', cursive;
+    display: flex;
+    justify-content: center;
 
 }
 .main-container{
-   text-align: center;
-    margin-top: 8em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 80%;
+    padding-top: 6em;
       
 }
 .new-task{
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    width: 65%;
+    margin: 5px;
 }
 .guardar-bt{
     margin-bottom: 1em;
@@ -34,9 +44,29 @@ body{
 }
 .list{
     display: flex;
-    align-items: center;
-    margin-left: 35em;
-    margin-top: 2em;
+    flex-direction: column;
+    width: 65%;
 }
-
+.list-task{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 65%;
+        margin: 5px;
+}
+.r{
+    width: 89%;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+.l{
+    width: 11%;
+    display: flex;
+    padding-right: 0px;
+}
+.group{
+    display: flex;
+    align-items: center;
+}
 

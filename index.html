@@ -4,48 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud de tareas</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-    <title>Crud de tareas</title>
 </head>
 <body>
     <div class="main-container">
         <div class="new-task">
             <h1>Nueva tarea</h1>
-            <div class="task-container">
-                <label form="title">Título de la tarea</label>
-                <input type="text" name="title" required>
-            </div>
-            <div class="task-container">
-                <label form="description">Descripción de la tarea</label>
-                <input type="text" name="description">
-            </div>
-            <button id="guardar-bt" class="guardar-bt">Guardar</button>
+            <input type="text" placeholder="Título de la tarea">
+            <input type="text" placeholder="Descripción de la tarea">
+            <button  id="guardar-bt" class="guardar-bt">Guardar</button>
         </div>
         <div class="list-task">
-            <h1>Lista de tareas</h1>
+            <div class="title-list">
+                <h1>Lista de tareas</h1>
+            </div>
             <div class="list">
-                <div class="first-task">
-                <i class="far fa-check-square  icon"></i>
-                <p>Completar los ejercicios de Álgebra</p>
-                <i class="fas fa-eye  icon"></i>
-                <i class="far fa-edit icon"></i>
-                <i class="fas fa-trash-alt  icon"></i>
-            </div>
-            <div class="second-task">
-                <i class="far fa-check-square  icon"></i>
-                <p>Completar los ejercicios de Álgebra</p>
-                <i class="fas fa-eye  icon"></i>
-                <i class="far fa-edit icon"></i>
-                <i class="fas fa-trash-alt  icon"></i>
-            </div>
-            <div class="third-task">
-                <i class="far fa-check-square  icon"></i>
-                <p>Completar los ejercicios de Álgebra</p>
-                <i class="fas fa-eye  icon"></i>
-                <i class="far fa-edit icon"></i>
-                <i class="fas fa-trash-alt  icon"></i>
-            </div>
+                <div class="group">
+                    <div class="r">
+                        <i class="far fa-check-square  icon"></i>
+                        <p>Completar los ejercicios de álgebra</p>
+                    </div>
+                    <div class="l">
+                        <i class="fas fa-eye"></i>
+                        <i class="far fa-edit"></i>
+                        <i class="fas fa-trash-alt"></i>
+                    </div>
+                </div>
+                <div class="group">
+                    <div class="r">
+                        <i class="far fa-check-square  icon"></i>
+                        <p>Completar los ejercicios de álgebra</p>
+                    </div>
+                    <div class="l">
+                        <i class="fas fa-eye"></i>
+                        <i class="far fa-edit"></i>
+                        <i class="fas fa-trash-alt"></i>
+                    </div>
+                </div>
+                <div class="group">
+                    <div class="r">
+                        <i class="far fa-check-square  icon"></i>
+                        <p>Completar los ejercicios de álgebra</p>
+                    </div>
+                    <div class="l">
+                        <i class="fas fa-eye"></i>
+                        <i class="far fa-edit"></i>
+                        <i class="fas fa-trash-alt"></i>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
