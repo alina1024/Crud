@@ -1,72 +1,174 @@
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
-body{
-    background-color: rgba(250, 235, 215, 0.747);
-    font-family: 'Poiret One', cursive;
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Patrick+Hand&family=Righteous&family=Zen+Kurenaido&display=swap');
+* {
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+  }
+  
+  body {
+    background-color: rgb(163, 240, 230);
+    font-family: 'Righteous', cursive;
     display: flex;
     justify-content: center;
-
-}
-.main-container{
+  }
+  
+  .main-container {
     display: flex;
-    align-items: center;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     width: 80%;
     padding-top: 6em;
-      
-}
-.new-task{
+  }
+  
+  .new-task {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 65%;
     margin: 5px;
-}
-.guardar-bt{
-    margin-bottom: 1em;
-    margin-top: 1em;
-    width: 10em;
-    background-color: #97CD9F;
-    padding-top: 0.2em;
-    padding-bottom: 0.2em;
+  }
+  
+  h1 {
+    font-size: 100px;
+  }
+  .texto-borde {
+    -webkit-text-stroke: 2px black;
+    color: white; 
+  }
+  
+  .new-task input,
+  .new-task textarea {
+    background-color: rgb(0, 0, 0, 0.1);
+    padding: 0.3em;
+    font-size: 30px;
+    font-family: 'Nunito', sans-serif;
+    width: 50%;
+    margin: 3px;
+  }
+  .new-task input:focus,
+  .new-task textarea:focus {
+    outline: 0px;
+  }
+  
+  button {
+    font-family: 'Nunito', sans-serif;
+    font-weight: bolder;
+    font-size: 25px;
+    color: #0e0f0f;
     border-radius: 5px;
-    border: 0px;
-    background-position: center;
-}
-.task-container{
+    width: 20%;
+    height: 30px;
+    cursor: pointer;
+    background-color: #fcbd6b;
+    margin: 3px;
+  }
+  
+  .list-tasks {
     display: flex;
     flex-direction: column;
-}
-.task-container input{
-    width: 16em;
-    height: 4em;
-    margin-left: 49em;
-}
-.list{
-    display: flex;
-    flex-direction: column;
+    align-items: center;
     width: 65%;
-}
-.list-task{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 65%;
-        margin: 5px;
-}
-.r{
+    margin: 5px;
+  }
+  
+  .list {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+  
+  .item {
+    display: flex;
+    align-items: center;
+  }
+  
+  .right {
     width: 89%;
     display: flex;
     align-items: center;
+    font-family: 'Nunito', sans-serif;
     font-size: 20px;
-}
-.l{
+  }
+  .right p {
+    padding-left: 0.5em;
+  }
+  
+  .left {
     width: 11%;
     display: flex;
     padding-right: 0px;
-}
-.group{
+  }
+  
+  img {
+    width: 25px;
+  }
+  
+  .left img {
+    margin: 2px;
+    cursor: pointer;
+  }
+  
+  #task-detail-dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  .dialog {
     display: flex;
+    justify-content: center;
     align-items: center;
-}
+    background-color: transparent;
+  }
+  dialog[open] {
+    background-color: transparent;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .task-detail {
+    background-color: rgb(255, 234, 219);
+    width: 100%;
+    min-height: 20rem;
+    padding: 2em;
+    border-radius: 10px;
+  }
+  .task-detail__title {
+    font-size: 2em;
+    text-align: center;
+  }
+  .task-detail__description {
+    font-family: 'Nunito', sans-serif;
+    margin-top: 2em;
+  }
+  .task-detail__complete {
+    margin-top: 1em;
+  }
+  .close-dialog {
+    text-align: end;
+    cursor: pointer;
+  }
+  
+  .edit-form-container {
+    margin-top: 2em;
+    display: flex;
+    width: 35rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  .edit-form-container input {
+    padding: 0.5em 1em;
+    width: 90%;
+    margin-bottom: 1em;
+  }
+  .edit-form-container textarea {
+    padding: 0.5em 1em;
+    width: 90%;
+    min-height: 3rem;
+  }
+  .edit-form-container button {
+    width: 50%;
+    margin-top: 2em;
+  }
 
